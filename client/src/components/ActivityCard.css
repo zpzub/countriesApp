@@ -1,0 +1,27 @@
+.activityCard{
+    width: 85%;
+    background-color: #fafafa;
+    padding: 10px 15px;
+    margin: 10px 0px;
+}
+
+.activityTitle{
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 10px;
+    border-bottom: 2px #cccccc solid;
+}
+
+.activitySubTitle{
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 1px #cccccc dotted;
+    color: #777777;
+    margin-top:-9px;
+}
+
+.activityData{
+ font-weight: 700;
+ text-transform: capitalize;
+ margin-top:-5px;
+}

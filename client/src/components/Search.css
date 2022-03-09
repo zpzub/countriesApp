@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    padding: 10px 22px;
+    justify-content:space-between; 
+}
+
+.logoStyle{
+    height: 45px;
+}
+
+.formStyle {
+    margin-top:9px;
+}
+
+.formText{
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: none;
+}
+.searchButton{
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-left: 5px;
+    background-color: #1d2b69;
+    color: #ffffff;
+    border:none;
+}
+
+.searchButton:hover {
+    background-color: #ffffff;
+    color: #222222;
+    cursor: grab;
+}

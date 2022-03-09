@@ -1,0 +1,118 @@
+.mainContainers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #ffffff;
+    width: 93%;
+    margin-left: 3%;
+    margin-right: 3%;
+    }
+
+.titleContainer{
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 60%;
+    padding: 15px;
+    flex: 1;
+    background-color: #a1ccc6;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    float:left;
+    text-align: left;
+    flex-basis: 40%;
+    padding: 15px;
+    flex: 3;
+    background-color: #eaeaea;
+    padding-bottom: 40px;
+}
+
+.button{
+    padding: 3px 15px;
+    font-size: 14px;
+    display: inline-table;
+    width: 130px;
+    margin-top: 15px;
+    background-color: #1d2b69 ;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: #cccccc ;
+    color: #1d2b69;
+}
+
+.activityTitles{
+    font-size: 55px;
+    font-weight: 300;
+    border: none;
+    color:white;
+    line-height: 54px;
+}
+
+.formLabel {
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: left;
+    display: table;
+}
+
+.formField{
+    border: none;
+    border-radius: 20px;
+    font-size:17px;
+    height: 23px;
+    width: 50%;
+    margin: 10px 0px ;
+}
+
+.formButton{
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-left: 5px;
+    margin-top:20px;
+    display: table;
+    background-color: #1d2b69;
+    color: #ffffff;
+    border:none;
+}
+
+.formButton:hover {
+    background-color: #ffffff;
+    color: #222222;
+    cursor: grab;
+}
+
+.listButton{
+    background-color: #cccccc;
+    border:none;
+    padding: 3px 9px;
+    border-radius: 20px;
+    display: inline-flex;
+    font-size: 13px;
+    margin: 10px 5px;
+}
+.listButton:hover{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.error{
+    background-color: rgb(255, 174, 0);
+    border:none;
+    font-weight: 700;
+    color: #222222;
+    padding: 3px 9px;
+    border-radius: 20px;
+    display: inline-flex;
+    font-size: 12px;
+    margin: 10px 5px;
+}

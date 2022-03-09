@@ -1,0 +1,17 @@
+.errorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.errorTitle{
+    font-size: 49px;
+    color: red;
+    font-weight: 300;
+    display: block;
+    flex:1;
+    margin-bottom: 20px;
+}
+.errorLink{
+    flex: 1;
+}

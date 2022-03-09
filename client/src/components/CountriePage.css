@@ -1,0 +1,105 @@
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #ffffff;
+    width: 93%;
+    margin-left: 3%;
+    margin-right: 3%;
+    }
+
+.countryContainer{
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    padding: 15px;
+    flex: 2;
+}
+
+.activitiesContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    float:left;
+    flex-basis: 40%;
+    padding: 15px;
+    flex: 1;
+    background-color: #eaeaea;
+    padding-bottom: 40px;
+}
+
+.countryHeader{
+    display: table;
+    width: 99%;
+}
+
+.activitiesTitle{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.countryName{
+    display: block;
+    font-size: 76px;
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.countryFlag{
+    display: block;
+    float: left;
+    height: 110px;
+    width: 110px;
+    border-radius: 140px;
+}
+
+.countrySection{
+    width: 99%;
+    text-align: left;
+    display: block;
+    border-bottom: 1px solid #cccccc;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #888888;
+    margin-top: -20px;
+}
+
+.countryData{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: -25px;
+}
+
+.button{
+    padding: 3px 15px;
+    font-size: 14px;
+    display: inline-table;
+    width: 130px;
+    margin-top: 15px;
+    background-color: #1d2b69 ;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: #ffffff ;
+    color: #1d2b69;
+}
+
+
+@media only screen and (min-width: 771px) and (max-width: 1050px) {
+    .countryContainer{ width: 43%;}
+    .activities{width: 43%;}
+}
+
+
+@media only screen and (max-width: 770px) {
+    .countryContainer{ width:100%; }
+    .activities{width: 100%; }
+}
