@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const routes = require('./routes/index.js');
 const cors = require('cors')
-
+const {CORS_URL} = process.env;
 
 
 require('./db.js');
@@ -17,17 +17,17 @@ server.use(express.urlencoded({ extended: true, limit: '50mb' }));
 server.use(express.json({ limit: '50mb' }));
 server.use(cookieParser());
 server.use(morgan('dev'));
-// server.use((req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', '*'); // update to match the domain you will make the request from
-//   res.header('Access-Control-Allow-Credentials', 'true');
-//   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-//   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-//   // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//   //   // The request is using the POST method
-//   //   header("HTTP/1.1 200 OK");}
-//     //return;
-//   next();
-// });
+server.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', CORS_URL); // update to match the domain you will make the request from
+  res.header('Access-Control-Allow-Credentials', 'true');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+  // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  //   // The request is using the POST method
+  //   header("HTTP/1.1 200 OK");}
+    //return;
+  next();
+});
 
 server.use('/api', routes);
 //server.use(cors());

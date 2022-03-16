@@ -6,13 +6,16 @@ const {
   DB_USER, DB_PASSWORD, DB_HOST,
 } = process.env;
 
-const sequelize = new Sequelize(`postgres://cwzsxhypefnmbm:0347024435ba458e889054b197bd8124870e136901fa9d574d7342035e2de96b@ec2-44-192-245-97.compute-1.amazonaws.com/d5gjml0eqvbl0g`, {
+const sequelize = new Sequelize(`postgres://cwzsxhypefnmbm:0347024435ba458e889054b197bd8124870e136901fa9d574d7342035e2de96b@ec2-44-192-245-97.compute-1.amazonaws.com:5432/d5gjml0eqvbl0g`, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
   dialect: 'postgres',
   protocol: 'postgres',
   dialectOptions: {
-    ssl: true
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    }
 }
 });
 
